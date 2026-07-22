@@ -1,6 +1,5 @@
 /**
- * pxt-robot
- * gezicht.ts
+ * pxt-robot-ph
  */
 
 //% weight=100 color=#2699BF icon="\uf544" block="Robot"
