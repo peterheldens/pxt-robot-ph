@@ -2,7 +2,7 @@
  * pxt-robot-ph
  */
 
-//% weight=100 color=#2699BF icon="\uf544" block="Robot"
+//% weight=100 color=#2699BF icon="\uf2db" block="Robot"
 namespace robot {
 
     const LED_PIN = DigitalPin.P16
