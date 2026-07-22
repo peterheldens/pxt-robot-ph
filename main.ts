@@ -2,6 +2,30 @@
  * pxt-robot-ph
  */
 
+/**
+ * Onderdelen van de robot.
+ */
+enum RobotOnderdeel {
+    //% block="antenne"
+    Antenne,
+    //% block="linker oog"
+    LinkerOog,
+    //% block="rechter oog"
+    RechterOog,
+    //% block="ogen"
+    Ogen,
+    //% block="neus"
+    Neus,
+    //% block="mond"
+    Mond,
+    //% block="bovenlip"
+    Bovenlip,
+    //% block="onderlip"
+    Onderlip,
+    //% block="hele robot"
+    Alles
+}
+
 //% weight=100 color=#2699BF icon="\uf2db" block="Robot"
 namespace robot {
 
