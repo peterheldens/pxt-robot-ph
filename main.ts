@@ -72,6 +72,57 @@ namespace robot {
     }
 
     /**
+     * Geef een onderdeel een kleur.
+     */
+    //% blockId=robot_kleur
+    //% block="kleur %onderdeel %kleur"
+    //% weight=91
+    export function kleur(
+        onderdeel: RobotOnderdeel,
+        kleur: NeoPixelColors
+    ): void {
+
+        switch (onderdeel) {
+
+            case RobotOnderdeel.Antenne:
+                setKleur(ANTENNE, ANTENNE, kleur)
+                break
+
+            case RobotOnderdeel.LinkerOog:
+                setKleur(LINKER_OOG, LINKER_OOG, kleur)
+                break
+
+            case RobotOnderdeel.RechterOog:
+                setKleur(RECHTER_OOG, RECHTER_OOG, kleur)
+                break
+
+            case RobotOnderdeel.Ogen:
+                setKleur(LINKER_OOG, RECHTER_OOG, kleur)
+                break
+
+            case RobotOnderdeel.Neus:
+                setKleur(NEUS, NEUS, kleur)
+                break
+
+            case RobotOnderdeel.Mond:
+                setKleur(MOND_BEGIN, MOND_EIND, kleur)
+                break
+
+            case RobotOnderdeel.Bovenlip:
+                setKleur(BOVENLIP_BEGIN, BOVENLIP_EIND, kleur)
+                break
+
+            case RobotOnderdeel.Onderlip:
+                setKleur(ONDERLIP_BEGIN, ONDERLIP_EIND, kleur)
+                break
+
+            case RobotOnderdeel.Alles:
+                setKleur(0, LED_COUNT - 1, kleur)
+                break
+        }
+    }
+
+    /**
      * Wis de robot.
      */
     //% blockId=robot_wis
